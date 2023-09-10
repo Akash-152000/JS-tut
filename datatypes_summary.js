@@ -39,3 +39,26 @@ console.log(typeof undefinedVal);       //undefined
 console.log(typeof arrayOfNum);         //object
 console.log(typeof myFunc);             //function(object function)
 console.log(typeof user);               //object
+
+
+// ----------------------------------------------- Memory------------------------------------------
+
+//Stack (Primitive datatypes) 
+// Heap (non- primitive datatypes)
+
+
+// in primitive dataypes when value is assigned to a variable and then another variable is assigned the forst variable
+// it recieves a copy of the variable
+
+let a = 1;
+let b = a;
+b=2;
+console.log(a,b); // 1 2 (as b recieved copy of 'a' not actual reference to 'a' )
+
+// in reference datatypes  each variables gets the reference of the value which is stored in heap
+// if two variables are equal then they can change the value in memory respectively
+
+let user1 = {id:1,name:"akash"};
+let user2 = user1; //user2 recieved reference of the value stored in user1 so any changes in user2 will reflect on user1
+user2.name="jay"
+console.log(user1,user2);
