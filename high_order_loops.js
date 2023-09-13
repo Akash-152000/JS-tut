@@ -33,8 +33,33 @@ for (const key of map) {
 // [ 'SL', 'Srilanka' ]
 
 for (const [key, value] of map) {
-    console.log(key,":-",value);
+    // console.log(key,":-",value);
 }
 // IN :- India
 // FR :- France
 // SL :- Srilanka
+
+
+////////////////////////////////////////forIn loop
+
+//For of loop does not work on object for that we use for in loop
+// forof loop returns values while forin loop returns key or incase of arrays it returns indexes
+
+const myObj = {"a":1,"b":2}
+
+for (const key in myObj) {
+    // console.log(key);
+    
+}
+// a
+// b
+
+const myArr = ["a","v","b","d"]
+
+for (const key in myArr) {
+    console.log(key);
+}
+// 0
+// 1
+// 2
+// 3
